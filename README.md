@@ -1,3 +1,15 @@
+## Test news list site
+
+- Adaptive layout.
+- BEM naming.
+- News filter by type (News, blog, etc.)
+- New posts by the “Download more” button.
+- Detail news page.
+- Styles with SCSS.
+- News list output with React + Redux.
+- FAKE Api (JSON).
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
