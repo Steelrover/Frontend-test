@@ -33,7 +33,7 @@ function fetchArticles({page = 1, marker = '', id, clearPage}) {
       try {
         dispatch(fetchArticlesPending());
 
-        const serverUrl = 'https://my-json-server.typicode.com/steelrover/demo/articles';
+        const serverUrl = 'https://my-json-server.typicode.com/steelrover/Test-news-list-site/articles';
         let filterParameter = marker === 'all' ? '' : 'marker=' + marker;
 
         if (id) filterParameter = 'id=' + id;
