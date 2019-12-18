@@ -1,0 +1,45 @@
+@import '../../vars.scss';
+
+.articles-container {
+  padding: 30px 40px;
+}
+
+.articles-wrap {
+  display: grid;
+  grid-template-columns: calc(100% / 3 - 20px) calc(100% / 3 - 20px) calc(100% / 3 - 20px);
+  grid-gap: 30px;
+}
+
+@media screen and (max-width: 780px) {
+  .articles-wrap {
+    grid-template-columns: calc(100% / 2 - 15px) calc(100% / 2 - 15px);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .articles-wrap {
+    grid-template-columns: 100%;
+  }
+}
+
+.pagination {
+  width: 100%;
+
+  &__show-more-button {
+    @include mediumFont;
+
+    width: 105px;
+    margin: 0 auto 30px auto;
+    border-bottom: 1px dotted $linkColor;
+    color: $linkColor;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+      color: $linkHovercolor;
+      border-bottom: 1px dotted #448aff;
+    }
+  }
+
+}

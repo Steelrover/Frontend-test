@@ -1,0 +1,133 @@
+@import '../../vars.scss';
+
+.article-preview {
+
+  &__wrap {
+    border: 1px solid #dddddd;
+    position: relative;
+    background-color: #fff;
+  }
+
+  &__photo {
+    min-width: inherit;
+    min-height: 156px;
+    background-color: $borderGray;
+    background-size: cover;
+    background-position: 50%;
+  }
+
+  &__content {
+    padding: 20px;
+  }
+
+  &__header, &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__footer {
+    position: relative;
+    bottom: -5px;
+    z-index: 200;
+  }
+
+  &__marker {
+    padding: 0 18px;
+    border-radius: 13px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+
+    @include tinyFont;
+
+    &_blog {
+      color: $textGreen;
+      background-color: $markerGreen;
+    }
+
+    &_news {
+      color: $textBlue;
+      background-color: $markerBlue;
+    }
+
+    &_promotion {
+      color: $textRed;
+      background-color: $markerRed;
+    }
+  }
+
+  &__date, &__views-count {
+    margin: 0;
+
+    @include smallFont;
+  }
+
+  &__date {
+    align-self: flex-start;
+    padding-top: 2px;
+  }
+
+  &__body{
+    height: 155px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__title {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: normal;
+    color: $colorTitle;
+
+    @include largeFont;
+  }
+
+  &__text {
+    margin: 0;
+    overflow: hidden;
+
+    @include mediumFont;
+
+  }
+
+  &__link {
+    color: $linkColor;
+    text-decoration: none;
+
+    @include mediumFont;
+
+    &:hover {
+      color: $linkHovercolor;
+    }
+
+  }
+
+  &__views {
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__views-icon {
+    width: 15px;
+    margin-right: 5px;
+    opacity: 0.5;
+  }
+
+  &__gradient {
+      width: 100%;
+      height: 100px;
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      z-index: 100;
+      background: -webkit-linear-gradient(bottom, white 0%, white 40%, rgba(255, 255, 255, 0.8) 60%, rgba(255, 255, 255, 0) 100%);
+      background: -o-linear-gradient(bottom, white 0%, white 40%, rgba(255, 255, 255, 0.8) 60%, rgba(255, 255, 255, 0) 100%);
+      background: linear-gradient(to top, white 0%, white 40%, rgba(255, 255, 255, 0.8) 60%, rgba(255, 255, 255, 0) 100%);;
+    }
+
+
+
+}

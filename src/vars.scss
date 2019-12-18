@@ -1,0 +1,36 @@
+$colorMain: #757575;
+$colorTitle: #333;
+$colorSub: #929292;
+$textGreen: #61d135;
+$textBlue: #5896fe;
+$textRed: #fd6c6f;
+$markerGreen: #eafee1;
+$markerBlue: #e1eafe;
+$markerRed: #fee1e1;
+$linkColor: #4460c9;
+$linkHovercolor: #5594fe;
+$borderGray: #e8e8e8;
+
+$lineHeightLarge: 26px;
+$lineHeightMedium: 24px;
+$lineHeightSmall: 18px;
+
+@mixin largeFont {
+  font-size: 18px;
+  line-height: $lineHeightLarge;
+}
+
+@mixin mediumFont {
+  font-size: 15px;
+  line-height: $lineHeightMedium;
+}
+
+@mixin smallFont {
+  font-size: 13px;
+  line-height: $lineHeightSmall;
+}
+
+@mixin tinyFont {
+  font-size: 11.15px;
+  line-height: 30.4px;
+}

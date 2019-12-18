@@ -1,0 +1,57 @@
+@import '../../vars.scss';
+
+.header {
+  height: 53px;
+  border-bottom: 1px solid $borderGray;
+  background-color: #fff;
+
+  &__wrap {
+    height: inherit;
+    display: flex;
+  }
+
+  &__button {
+    min-width: 80px;
+    border-bottom: 4px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+
+    @include largeFont;
+
+    &:visited {
+      color: inherit;
+    }
+
+    &_active {
+      color: $linkHovercolor;
+      border-bottom: 4px solid $linkHovercolor;
+
+      &:visited {
+        color: $linkHovercolor;
+      }
+    }
+
+    &_medium {
+      min-width: 135px;
+    }
+
+    &:hover {
+      color: $linkHovercolor;
+    }
+
+  }
+
+  @media screen and (max-width: 360px) {
+    &__button {
+      min-width: 65px;
+
+      &_medium {
+        min-width: 125px;
+      }
+    }
+  }
+
+}

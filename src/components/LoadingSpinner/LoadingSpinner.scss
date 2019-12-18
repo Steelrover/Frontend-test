@@ -1,0 +1,40 @@
+.load-spinner {
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px);
+  z-index: 1000;
+
+  &__element {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    margin: 6px;
+    border: 2px solid #5594fe;
+    border-radius: 50%;
+    animation: load-spinner 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #5594fe transparent transparent transparent;
+
+    &-first {
+      animation-delay: -0.45s;
+    }
+
+    &-second {
+      animation-delay: -0.3s;
+    }
+
+    &-third {
+      animation-delay: -0.15s;
+    }
+  }
+}
+
+@keyframes load-spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
